@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Islamic Bank</title>
+
+    <link rel="stylesheet" href="bank.css" />
+    <script src="hello.js"></script>
+  </head>
+  
+    <label for="dark-mode-toggle">Dark Mode</label>
+    <input type="checkbox" id="dark-mode-toggle" />
+    <div id="log-page">
+      <h1 class="bank-title">Welcome to Islamic Bank</h1>
+      <div class="sub-area">
+        <h4>Log In</h4>
+        <input type="text" placeholder="email" class="text" /> <br />
+        <input
+          type="password"
+          name=""
+          id=""
+          placeholder="password"
+          class="pass"
+        />
+        <br />
+        <button id="log-in" class="btn">Enter</button>
+      </div>
+    </div>
+
+    <div id="tarn-area">
+      <div class="row">
+        <div class="col-md-4 Deposit">
+          <h5>Deposit</h5>
+          <h2>$ <span id="currentDeposit">00</span></h2>
+        </div>
+        <div class="col-md-4 Withdraw">
+          <h5>Withdraw</h5>
+          <h2>$ <span id="withdraw">00</span></h2>
+        </div>
+        <div class="col-md-4 Balance">
+          <h5>Balance</h5>
+          <h2>$ <span id="Balance">00</span></h2>
+        </div>
+      </div>
+      <div class="row1">
+        <div class="row-col-5">
+          <h4>Deposit</h4>
+          <input
+            type="text"
+            class="in-put"
+            id="depositAmount"
+            placeholder="$ Amount you want to deposit"
+          /><br />
+          <button id="deposit" class="btn-success">Deposit</button>
+        </div>
+        <div class="row-col-5">
+          <h4>Withdraw</h4>
+          <input
+            id="withdrawAmount"
+            type="text"
+            class="in-put"
+            placeholder="$ Amount you want to Withdraw"
+          />
+          <br /><button id="addWithdraw" class="btn-success">Withdraw</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="bank.js">
+     
+    </script>
+  </body>
+</html>
